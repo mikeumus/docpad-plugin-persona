@@ -1,0 +1,42 @@
+{
+    "name": "docpad-plugin-persona",
+    "version": "2.0.1",
+    "description": "DocPad plugin implementing express-persona",
+    "homepage": "",
+    "keywords": [
+        "docpad",
+        "docpad-plugin",
+        "mozilla",
+        "express-persona",
+        "persona"
+    ],
+    "author": "Mikeumus <mike@mdm.cm> (http://mdm.cm/)",
+    "maintainers": [
+        "Mikeumus <mike@mdm.cm> (http://mdm.cm/)",
+    ],
+    "contributors": [
+        "Mikeumus <mike@mdm.cm> (http://mdm.cm/)",
+    ],
+    "bugs": {
+        "url": ""
+    },
+    "repository" : {
+        "type": "git",
+        "url": ""
+    },
+    "engines" : {
+        "node": ">=0.6.0",
+        "docpad": "6.x"
+    },
+    "dependencies": {
+        "express-persona": "latest",
+        "express": "~3.0.6"
+    },
+    "main": "./persona.plugin.coffee",
+    "devDependencies": {
+        "coffee-script": "1.4.x"
+    },
+    "scripts": {
+        "test": "node ./test/yourPlugin.test.js"
+    }
+}

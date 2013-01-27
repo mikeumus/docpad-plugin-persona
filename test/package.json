@@ -1,0 +1,10 @@
+{
+    "name": "docpad-plugin-persona-testsuite",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+    	"docpad": "6.x",
+        "docpad-plugin-eco": "latest",
+        "express-persona": "latest"
+    }
+}
