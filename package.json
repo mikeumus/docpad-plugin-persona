@@ -18,25 +18,27 @@
         "Mikeumus <mike@mdm.cm> (http://mdm.cm/)",
     ],
     "bugs": {
-        "url": ""
+        "url": "https://github.com/mikeumus/docpad-plugin-persona/issues"
     },
     "repository" : {
         "type": "git",
-        "url": ""
+        "url": "git://github.com/mikeumus/docpad-plugin-persona.git"
     },
     "engines" : {
         "node": ">=0.6.0",
         "docpad": "6.x"
     },
     "dependencies": {
-        "express-persona": "latest",
-        "express": "~3.0.6"
+        "express-persona": "0.0.7",
+        "express": "~3.0.6",
+        "jsdom": "0.2.x",
+        "bal-util": ">=1.13.8 <1.14"
     },
-    "main": "./persona.plugin.coffee",
+    "main": "./out/persona.plugin.js",
     "devDependencies": {
         "coffee-script": "1.4.x"
     },
     "scripts": {
-        "test": "node ./test/yourPlugin.test.js"
+        "test": "node ./test/persona.test.js"
     }
 }

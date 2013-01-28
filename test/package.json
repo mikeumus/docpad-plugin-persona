@@ -4,7 +4,9 @@
     "private": true,
     "dependencies": {
     	"docpad": "6.x",
-        "docpad-plugin-eco": "latest",
-        "express-persona": "latest"
+        "docpad-plugin-eco": "0.0.7",
+        "express-persona": "latest",
+        "bal-util": ">=1.13.8 <1.14",
+        "jsdom": "0.2.x"
     }
 }
