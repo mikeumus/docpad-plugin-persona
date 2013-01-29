@@ -84,6 +84,6 @@ ___
 </tr>
 <tr>
     <td>bal-util</td>
-    <td>>=1.13.8 ``<``1.14</td>
+    <td>&gt;=1.13.8 &lt;1.14</td>
 </tr>
 </table>
