@@ -49,14 +49,12 @@ module.exports = (BasePlugin) ->
 
     # Chain
     @
-*/
 
-  # Select the pClass
-  # next(err)
-  personaClass = (window, pClass, next) ->
+  # personatize an element
+  personaSelector = (window, personaClass) ->
     # Prepare
-    pClass = element
-/*  bottomNode = element
+  pClass = element
+    bottomNode = element
     source = false
     language = false 
 
@@ -93,70 +91,63 @@ module.exports = (BasePlugin) ->
             if matches and matches.length is 2
               language = matches[1]
 */
-    # Personatize
-  //  pygmentizeSource source, language, (err,result) ->
-      personatize err, result ->
-      return next(err)  if err
-      if result
-        # Handle
-    /*  resultElWrapper = window.document.createElement('div')
-        resultElWrapper.innerHTML = result
-        resultElInner = resultElWrapper.childNodes[0]
-        resultElInner.className += ' highlighted codehilite'
-        topNode.parentNode.replaceChild(resultElInner,topNode) */
-        injectPersonaScript = window.document.createElement('script')
-        injectPersonaScript.type = "text/javascript"
-        injectPersonaScript.src = "express-persona-docpad.js"
-      return next()
-/*
-    # Chain
-    @
+booli = new Boolean() 
+
+# Personatize
+personatize = (err, booli) ->
+  return (err)  if err
+  if booli = true
+    # Handle
+    injectPersonaScript = window.document.createElement('script')
+    injectPersonaScript.type = "text/javascript"
+    injectPersonaScript.src = "express-persona-docpad.js"
+
+# Define Plugin
+class PersonaPlugin extends BasePlugin
+  # Plugin name
+  name: 'persona'
+
+  # Render the document
+  renderDocument: (opts) ->
+    # Prepare
+    {extension,file} = opts
+
+    # Handle
+    if file.type is 'document'  and  extension is 'html'
+      # Create DOM from the file content
+      jsdom.env(
+        html: "<html><body>#{opts.content}</body></html>"
+        features:
+          QuerySelector: true
+        done: (err,window) ->
+          # Check
+          return err  if err
+
+          # Find highlightable elements
+          elements = window.document.querySelectorAll('#persona-btn')
+
+          # Check
+          if elements.length is 0
+            return booli = false
+
+          # Tasks
+          tasks = new balUtil.Group (err) ->
+            return err  if err
+            # Apply the content
+            opts.content = window.document.body.innerHTML
+            # Completed
+            return booli = false
+        # tasks.total = elements.length
+
+          personatize(err, booli)
+
+        /*  # Syntax highlight those elements
+          for value,key in elements
+            element = elements.item(key)
+            highlightElement window, element, tasks.completer()
 */
-
-  # Define Plugin
-  class PersonasPlugin extends BasePlugin
-    # Plugin name
-    name: 'personas'
-
-    # Render the document
-    renderDocument: (opts,next) ->
-      # Prepare
-      {extension,file} = opts
-
-      # Handle
-      if file.type is 'document'  and  extension is 'html'
-        # Create DOM from the file content
-        jsdom.env(
-          html: "<html><body>#{opts.content}</body></html>"
-          features:
-            QuerySelector: true
-          done: (err,window) ->
-            # Check
-            return next(err)  if err
-
-            # Find persona buttons
-            pClass = window.document.querySelectorAll('#persona-btn')
-
-            # Check
-            if pClass.length is 0
-              return next()
-
-            # Tasks
-            tasks = new balUtil.Group (err) ->
-              return next(err)  if err
-              # Apply the content
-              opts.content = window.document.body.innerHTML
-              # Completed
-              return next()
-            tasks.total = pClass.length
-
-           /* # Syntax highlight those elements
-            for value,key in elements
-              pClass = pClass.item(key)
-              highlightElement window, element, tasks.completer() */
-
-            # Done
-            true
-        )
-      else
-        return next()
+          # Done
+        # booli = true
+      )
+    else
+      return booli = false

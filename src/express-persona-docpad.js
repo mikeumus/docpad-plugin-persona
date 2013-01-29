@@ -1,4 +1,4 @@
-var loginButton = document.querySelector('.persona-btn');
+var loginButton = document.querySelectorAll('.persona-btn');
 
 loginButton.addEventListener("click", function() {
   navigator.id.get(function(assertion) {
