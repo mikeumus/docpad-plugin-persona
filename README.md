@@ -5,7 +5,7 @@ docpad-plugin-persona
 
 [Mozilla Persona](https://developer.mozilla.org/en-US/docs/Persona?redirectlocale=en-US&redirectslug=BrowserID "https://developer.mozilla.org/en-US/docs/Persona?redirectlocale=en-US&redirectslug=BrowserID"), formerly called BrowserID, is self described as: "a cross-browser login system for the Web that's easy to use and easy to deploy. It works on all major browsers, and you can get started today."
 
-This docpad plugin uses [jsdom](https://github.com/tmpvar/jsdom "https://github.com/tmpvar/jsdom") to [query](https://developer.mozilla.org/en-US/docs/DOM/Document.querySelectorAll "https://developer.mozilla.org/en-US/docs/DOM/Document.querySelectorAll") the DOM for "#persona-btn" on the [renderDocument](http://docpad.org/docs/events "http://docpad.org/docs/events") docpad event. If it finds it, it'll create a script tag that is the express-persona script:
+This docpad plugin uses [jsdom](https://github.com/tmpvar/jsdom "https://github.com/tmpvar/jsdom") to [query](https://developer.mozilla.org/en-US/docs/DOM/Document.querySelectorAll "https://developer.mozilla.org/en-US/docs/DOM/Document.querySelectorAll") the DOM for ".persona-btn" on the [renderDocument](http://docpad.org/docs/events "http://docpad.org/docs/events") docpad event. If it finds it, it'll create a script tag that is the express-persona script:
 
 ```javascript
 var loginButton = document.querySelectorAll('.persona-btn');
@@ -90,4 +90,4 @@ ___
 
 ## License
 Licensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT License](http://creativecommons.org/licenses/MIT/)
-<br/>Copyright &copy; 2013 [MDM Inc](http://mdm.cm/ "http://mdm.cm/")
+<br/>Copyright &copy; 2013 [MDM Inc.](http://mdm.cm/ "http://mdm.cm/")

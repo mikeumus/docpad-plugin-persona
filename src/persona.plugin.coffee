@@ -124,7 +124,7 @@ class PersonaPlugin extends BasePlugin
           return err  if err
 
           # Find highlightable elements
-          elements = window.document.querySelectorAll('#persona-btn')
+          elements = window.document.querySelectorAll('.persona-btn')
 
           # Check
           if elements.length is 0
