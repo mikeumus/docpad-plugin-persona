@@ -1,7 +1,7 @@
 docpad-plugin-persona
 =====================
 
-The [express-persona](http://jbuck.github.com/express-persona/ "http://jbuck.github.com/express-persona/") npm module as a [docpad](http://docpad.org/ "http://docpad.org/") plugin.
+### The [express-persona](http://jbuck.github.com/express-persona/ "http://jbuck.github.com/express-persona/") npm module as a [docpad](http://docpad.org/ "http://docpad.org/") plugin.
 
 [Mozilla Persona](https://developer.mozilla.org/en-US/docs/Persona?redirectlocale=en-US&redirectslug=BrowserID "https://developer.mozilla.org/en-US/docs/Persona?redirectlocale=en-US&redirectslug=BrowserID"), formerly called BrowserID, is self described as: "a cross-browser login system for the Web that's easy to use and easy to deploy. It works on all major browsers, and you can get started today."
 
@@ -42,7 +42,7 @@ loginButton.addEventListener("click", function() {
 ___
 
 
-##### The "Sign in" button comes in three versions, and three colors:
+##### The "Sign in" button comes in three color options:
 Along with a script tag being created, a link tag will be created as well linking the appripiate css file to create a CSS3 Sign In button.
 <table>
 <tr>
