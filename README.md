@@ -53,16 +53,16 @@ Along with a script tag being created, a link tag will be created as well linkin
 <tr>
     <td>.persona-btn</td>
     <td><img src="https://developer.mozilla.org/files/3969/plain_sign_in_blue.png" alt="persona sign in blue"/></td>
-    <td>persona-btn.css</td>
+    <td><a href="https://github.com/mikeumus/docpad-plugin-persona/blob/master/src/styles/persona-btn.css" title="https://github.com/mikeumus/docpad-plugin-persona/blob/master/src/styles/persona-btn.css">persona-btn.css</a></td>
 </tr>
 <tr>
 	<td>" + .dark</td>
 	<td><img src="https://developer.mozilla.org/files/3967/plain_sign_in_black.png" alt="persona sign in dark"/></td>
-	<td>persona-dark-btn.css</td>
+	<td><a href="https://github.com/mikeumus/docpad-plugin-persona/blob/master/src/styles/persona-dark-btn.css" title="https://github.com/mikeumus/docpad-plugin-persona/blob/master/src/styles/persona-dark-btn.css">persona-dark-btn.css</a></td>
 <tr>
 	<td>" + .orange</td>
 	<td><img src="https://developer.mozilla.org/files/3971/plain_sign_in_red.png" alt="persona sign in orange"/></td>
-	<td>persona-orange-btn.css</td>
+	<td><a href="https://github.com/mikeumus/docpad-plugin-persona/blob/master/src/styles/persona-orange-btn.css" title="https://github.com/mikeumus/docpad-plugin-persona/blob/master/src/styles/persona-orange-btn.css">persona-orange-btn.css</a></td>
 </table>
 
 ___
