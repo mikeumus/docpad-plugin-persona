@@ -87,3 +87,7 @@ ___
     <td>&gt;=1.13.8 &lt;1.14</td>
 </tr>
 </table>
+
+## License
+Licensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT License](http://creativecommons.org/licenses/MIT/)
+<br/>Copyright &copy; 2013 [MDM Inc](http://mdm.cm/ "http://mdm.cm/")
