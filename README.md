@@ -48,20 +48,20 @@ Along with a script tag being created, a link tag will be created as well linkin
 <tr>
     <td>.class</td>
     <td>Button</td>
-    <td>.css</td>
+    <td>.css file</td>
 </tr>
 <tr>
-    <td>none</td>
-    <td>![alt text](https://developer.mozilla.org/files/3969/plain_sign_in_blue.png "persona sign in blue")</td>
+    <td>.persona-btn</td>
+    <td><img src="https://developer.mozilla.org/files/3969/plain_sign_in_blue.png" alt="persona sign in blue"/></td>
     <td>persona-btn.css</td>
 </tr>
 <tr>
-	<td>.dark</td>
-	<td>![alt text](https://developer.mozilla.org/files/3967/plain_sign_in_black.png "persona sign in dark")</td>
+	<td>" + .dark</td>
+	<td><img src="https://developer.mozilla.org/files/3967/plain_sign_in_black.png" alt="persona sign in dark"/></td>
 	<td>persona-dark-btn.css</td>
 <tr>
-	<td>.orange</td>
-	<td>![alt text](https://developer.mozilla.org/files/3971/plain_sign_in_red.png "persona sign in orange")</td>
+	<td>" + .orange</td>
+	<td><img src="https://developer.mozilla.org/files/3971/plain_sign_in_red.png" alt="persona sign in orange"/></td>
 	<td>persona-orange-btn.css</td>
 </table>
 
@@ -80,10 +80,10 @@ ___
 </tr>
 <tr>
     <td>express-persona</td>
-    <td>0.0.7/td>
+    <td>0.0.7</td>
 </tr>
 <tr>
     <td>bal-util</td>
-    <td>\>=1.13.8 \<1.14</td>
+    <td>>=1.13.8 `<`1.14</td>
 </tr>
 </table>
