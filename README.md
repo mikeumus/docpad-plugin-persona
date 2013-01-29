@@ -5,7 +5,7 @@ docpad-plugin-persona
 
 [Mozilla Persona](https://developer.mozilla.org/en-US/docs/Persona?redirectlocale=en-US&redirectslug=BrowserID "https://developer.mozilla.org/en-US/docs/Persona?redirectlocale=en-US&redirectslug=BrowserID"), formerly called BrowserID, is self described as: "a cross-browser login system for the Web that's easy to use and easy to deploy. It works on all major browsers, and you can get started today."
 
-This docpad plugin uses jsdom to query the DOM for "#persona-btn" on the [renderDocument](http://docpad.org/docs/events "http://docpad.org/docs/events") docpad event. If it finds it, it'll create a script tag that is the express-persona script:
+This docpad plugin uses [jsdom](https://github.com/tmpvar/jsdom "https://github.com/tmpvar/jsdom") to [query](https://developer.mozilla.org/en-US/docs/DOM/Document.querySelectorAll "https://developer.mozilla.org/en-US/docs/DOM/Document.querySelectorAll") the DOM for "#persona-btn" on the [renderDocument](http://docpad.org/docs/events "http://docpad.org/docs/events") docpad event. If it finds it, it'll create a script tag that is the express-persona script:
 
 ```javascript
 var loginButton = document.querySelectorAll('.persona-btn');
@@ -71,19 +71,19 @@ ___
 ##### Dependencies
 <table>
 <tr>
-    <td>jsdom.js</td>
+    <td><a href="https://npmjs.org/package/jsdom">jsdom.js</a></td>
     <td>0.2.x</td>
 </tr>
 <tr>
-    <td>express</td>
+    <td><a href="https://npmjs.org/package/express">express</a></td>
     <td>~3.0.6</td>
 </tr>
 <tr>
-    <td>express-persona</td>
+    <td><a href="https://npmjs.org/package/express-persona">express-persona</a></td>
     <td>0.0.7</td>
 </tr>
 <tr>
-    <td>bal-util</td>
+    <td><a href="https://npmjs.org/package/bal-util">bal-util</a></td>
     <td>&gt;=1.13.8 &lt;1.14</td>
 </tr>
 </table>
