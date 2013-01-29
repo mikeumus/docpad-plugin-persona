@@ -1,7 +1,6 @@
 # Export Plugin
 module.exports = (BasePlugin) ->
   # Requires
-  balUtil = require('bal-util')
   jsdom = require('jsdom')
   express = require('express')
 
@@ -11,14 +10,7 @@ module.exports = (BasePlugin) ->
   console.log('persona is starting!')
   booli = new Boolean() 
 
-  # Personatize
-  personatize = (err, booli) ->
-    return (err)  if err
-    if booli = true
-      # Handle
-      injectPersonaScript = window.document.createElement('script')
-      injectPersonaScript.type = "text/javascript"
-      injectPersonaScript.src = "express-persona-docpad.js"
+
 
   # Define Plugin
   class PersonaPlugin extends BasePlugin
@@ -42,17 +34,18 @@ module.exports = (BasePlugin) ->
             return err  if err
 
             # Find highlightable elements
-            elements = window.document.querySelectorAll('.persona-btn')
+            elements = window.document.querySelectorAll '.persona-btn'
 
             # Check
             if elements.length is 0
-              return booli = false
-            
-              personatize(null, booli)
-              opts.content = window.document.body.innerHTML
-            
-            else 
-              return booli = true
+              return [booli = false, document]
+
+            opts.content = window.document.body.innerHTML  
+
+            injectPersonaScript = window.document.createElement('script')
+            injectPersonaScript.type = "text/javascript"
+            injectPersonaScript.src = "express-persona-docpad.js"
+
+            # Done
+            true
         )
-      else
-        return booli = false
