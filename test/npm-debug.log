@@ -1,0 +1,137 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.2.2
+3 info using node@v0.8.18
+4 verbose read json d:\MDM-lenovo-s10\Resource\Development\docpad\plugins\docpad-plugin-persona\test\package.json
+5 warn package.json docpad-plugin-persona-testsuite@0.1.0 No README.md file found!
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ 'd:\\MDM-lenovo-s10\\Resource\\Development\\docpad\\plugins\\docpad-plugin-persona\\test',
+7 verbose install   [ 'docpad',
+7 verbose install     'docpad-plugin-eco',
+7 verbose install     'express-persona',
+7 verbose install     'bal-util',
+7 verbose install     'jsdom' ] ]
+8 verbose from cache d:\MDM-lenovo-s10\Resource\Development\docpad\plugins\docpad-plugin-persona\test\package.json
+9 info preinstall docpad-plugin-persona-testsuite@0.1.0
+10 verbose from cache d:\MDM-lenovo-s10\Resource\Development\docpad\plugins\docpad-plugin-persona\test\package.json
+11 verbose readDependencies using package.json deps
+12 verbose cache add [ 'docpad@6.x', null ]
+13 verbose cache add name=undefined spec="docpad@6.x" args=["docpad@6.x",null]
+14 verbose parsed url { pathname: 'docpad@6.x',
+14 verbose parsed url   path: 'docpad@6.x',
+14 verbose parsed url   href: 'docpad@6.x' }
+15 verbose cache add name="docpad" spec="6.x" args=["docpad","6.x"]
+16 verbose parsed url { pathname: '6.x', path: '6.x', href: '6.x' }
+17 verbose addNamed [ 'docpad', '6.x' ]
+18 verbose addNamed [ null, '>=6.0.0- <7.0.0-' ]
+19 verbose cache add [ 'docpad-plugin-eco@0.0.7', null ]
+20 verbose cache add name=undefined spec="docpad-plugin-eco@0.0.7" args=["docpad-plugin-eco@0.0.7",null]
+21 verbose parsed url { pathname: 'docpad-plugin-eco@0.0.7',
+21 verbose parsed url   path: 'docpad-plugin-eco@0.0.7',
+21 verbose parsed url   href: 'docpad-plugin-eco@0.0.7' }
+22 verbose cache add name="docpad-plugin-eco" spec="0.0.7" args=["docpad-plugin-eco","0.0.7"]
+23 verbose parsed url { pathname: '0.0.7', path: '0.0.7', href: '0.0.7' }
+24 verbose addNamed [ 'docpad-plugin-eco', '0.0.7' ]
+25 verbose addNamed [ '0.0.7', '0.0.7' ]
+26 verbose cache add [ 'express-persona@latest', null ]
+27 verbose cache add name=undefined spec="express-persona@latest" args=["express-persona@latest",null]
+28 verbose parsed url { pathname: 'express-persona@latest',
+28 verbose parsed url   path: 'express-persona@latest',
+28 verbose parsed url   href: 'express-persona@latest' }
+29 verbose cache add name="express-persona" spec="latest" args=["express-persona","latest"]
+30 verbose parsed url { pathname: 'latest', path: 'latest', href: 'latest' }
+31 verbose addNamed [ 'express-persona', 'latest' ]
+32 verbose addNamed [ null, null ]
+33 verbose cache add [ 'bal-util@>=1.13.8 <1.14', null ]
+34 verbose cache add name=undefined spec="bal-util@>=1.13.8 <1.14" args=["bal-util@>=1.13.8 <1.14",null]
+35 verbose parsed url { pathname: 'bal-util@%3E=1.13.8%20%3C1.14',
+35 verbose parsed url   path: 'bal-util@%3E=1.13.8%20%3C1.14',
+35 verbose parsed url   href: 'bal-util@%3E=1.13.8%20%3C1.14' }
+36 verbose cache add name="bal-util" spec=">=1.13.8 <1.14" args=["bal-util",">=1.13.8 <1.14"]
+37 verbose parsed url { pathname: '%3E=1.13.8%20%3C1.14',
+37 verbose parsed url   path: '%3E=1.13.8%20%3C1.14',
+37 verbose parsed url   href: '%3E=1.13.8%20%3C1.14' }
+38 verbose addNamed [ 'bal-util', '>=1.13.8 <1.14' ]
+39 verbose addNamed [ null, '>=1.13.8 <1.14.0-' ]
+40 verbose cache add [ 'jsdom@0.2.x', null ]
+41 verbose cache add name=undefined spec="jsdom@0.2.x" args=["jsdom@0.2.x",null]
+42 verbose parsed url { pathname: 'jsdom@0.2.x',
+42 verbose parsed url   path: 'jsdom@0.2.x',
+42 verbose parsed url   href: 'jsdom@0.2.x' }
+43 verbose cache add name="jsdom" spec="0.2.x" args=["jsdom","0.2.x"]
+44 verbose parsed url { pathname: '0.2.x', path: '0.2.x', href: '0.2.x' }
+45 verbose addNamed [ 'jsdom', '0.2.x' ]
+46 verbose addNamed [ null, '>=0.2.0- <0.3.0-' ]
+47 silly lockFile 94b3f0bd-docpad-6-x docpad@6.x
+48 verbose lock docpad@6.x C:\Documents and Settings\Mikeumus\Application Data\npm-cache\94b3f0bd-docpad-6-x.lock
+49 silly lockFile 13156f9b-docpad-plugin-eco-0-0-7 docpad-plugin-eco@0.0.7
+50 verbose lock docpad-plugin-eco@0.0.7 C:\Documents and Settings\Mikeumus\Application Data\npm-cache\13156f9b-docpad-plugin-eco-0-0-7.lock
+51 silly lockFile ed0f6217-express-persona-latest express-persona@latest
+52 verbose lock express-persona@latest C:\Documents and Settings\Mikeumus\Application Data\npm-cache\ed0f6217-express-persona-latest.lock
+53 silly lockFile 78ffd898-bal-util-1-13-8-1-14 bal-util@>=1.13.8 <1.14
+54 verbose lock bal-util@>=1.13.8 <1.14 C:\Documents and Settings\Mikeumus\Application Data\npm-cache\78ffd898-bal-util-1-13-8-1-14.lock
+55 silly lockFile 7d932d80-jsdom-0-2-x jsdom@0.2.x
+56 verbose lock jsdom@0.2.x C:\Documents and Settings\Mikeumus\Application Data\npm-cache\7d932d80-jsdom-0-2-x.lock
+57 silly addNameRange { name: 'docpad', range: '>=6.0.0- <7.0.0-', hasData: false }
+58 info addNameTag [ 'express-persona', 'latest' ]
+59 silly addNameRange { name: 'jsdom', range: '>=0.2.0- <0.3.0-', hasData: false }
+60 silly addNameRange { name: 'bal-util', range: '>=1.13.8 <1.14.0-', hasData: false }
+61 verbose url raw docpad-plugin-eco/0.0.7
+62 verbose url resolving [ 'https://registry.npmjs.org/', './docpad-plugin-eco/0.0.7' ]
+63 verbose url resolved https://registry.npmjs.org/docpad-plugin-eco/0.0.7
+64 info trying registry request attempt 1 at 09:46:13
+65 http GET https://registry.npmjs.org/docpad-plugin-eco/0.0.7
+66 verbose url raw express-persona
+67 verbose url resolving [ 'https://registry.npmjs.org/', './express-persona' ]
+68 verbose url resolved https://registry.npmjs.org/express-persona
+69 info trying registry request attempt 1 at 09:46:14
+70 http GET https://registry.npmjs.org/express-persona
+71 verbose url raw jsdom
+72 verbose url resolving [ 'https://registry.npmjs.org/', './jsdom' ]
+73 verbose url resolved https://registry.npmjs.org/jsdom
+74 info trying registry request attempt 1 at 09:46:14
+75 http GET https://registry.npmjs.org/jsdom
+76 verbose url raw bal-util
+77 verbose url resolving [ 'https://registry.npmjs.org/', './bal-util' ]
+78 verbose url resolved https://registry.npmjs.org/bal-util
+79 info trying registry request attempt 1 at 09:46:14
+80 verbose etag "DP3XEEPXZZLHIYGP8FG8OOFUW"
+81 http GET https://registry.npmjs.org/bal-util
+82 verbose url raw docpad
+83 verbose url resolving [ 'https://registry.npmjs.org/', './docpad' ]
+84 verbose url resolved https://registry.npmjs.org/docpad
+85 info trying registry request attempt 1 at 09:46:14
+86 verbose etag "3Q4J71WRER5GCN02FMJINMAZL"
+87 http GET https://registry.npmjs.org/docpad
+88 http 404 https://registry.npmjs.org/docpad-plugin-eco/0.0.7
+89 silly registry.get cb [ 404,
+89 silly registry.get   { vary: 'Accept',
+89 silly registry.get     server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+89 silly registry.get     etag: '"CG1IXIBPKX0XN0SZ0413TZTEF"',
+89 silly registry.get     date: 'Mon, 28 Jan 2013 14:44:42 GMT',
+89 silly registry.get     'content-type': 'application/json',
+89 silly registry.get     'content-length': '36' } ]
+90 silly lockFile 13156f9b-docpad-plugin-eco-0-0-7 docpad-plugin-eco@0.0.7
+91 error Error: version not found: 0.0.7 : docpad-plugin-eco/0.0.7
+91 error     at RegClient.<anonymous> (c:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:259:14)
+91 error     at Request.init.self.callback (c:\Program Files\nodejs\node_modules\npm\node_modules\request\main.js:120:22)
+91 error     at Request.EventEmitter.emit (events.js:99:17)
+91 error     at Request.<anonymous> (c:\Program Files\nodejs\node_modules\npm\node_modules\request\main.js:648:16)
+91 error     at Request.EventEmitter.emit (events.js:126:20)
+91 error     at IncomingMessage.Request.start.self.req.self.httpModule.request.buffer (c:\Program Files\nodejs\node_modules\npm\node_modules\request\main.js:610:14)
+91 error     at IncomingMessage.EventEmitter.emit (events.js:126:20)
+91 error     at IncomingMessage._emitEnd (http.js:366:10)
+91 error     at HTTPParser.parserOnMessageComplete [as onMessageComplete] (http.js:149:23)
+91 error     at CleartextStream.socketOnData (http.js:1447:20)
+92 error If you need help, you may report this log at:
+92 error     <http://github.com/isaacs/npm/issues>
+92 error or email it to:
+92 error     <npm-@googlegroups.com>
+93 error System Windows_NT 5.1.2600
+94 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+95 error cwd d:\MDM-lenovo-s10\Resource\Development\docpad\plugins\docpad-plugin-persona\test
+96 error node -v v0.8.18
+97 error npm -v 1.2.2
+98 verbose exit [ 1, true ]
