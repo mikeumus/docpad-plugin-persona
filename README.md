@@ -1,3 +1,5 @@
+IN PROGRESS. NON-FUNCTIONAL.
+
 docpad-plugin-persona
 =====================
 
